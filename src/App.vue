@@ -1,34 +1,26 @@
 <template>
-<my-header></my-header>
-<section class="container content">
-  <h2>Iam Content</h2>
-  <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> 
-    Quam odio eligendi cum nam voluptatum iure veritatis eum suscipit<br> 
-    reprehenderit eos. Sunt adipisci, voluptates ut veniam libero harum beatae minima aspernatur.
-  </p>
-</section>
-<my-footer></my-footer>
-
+  <my-header></my-header>
+    <router-view></router-view>
+  <my-footer></my-footer>
 </template>
 
 <script>
 
-import Home from './components/header/Header.vue'
-import Footer from './components/footer/Footer.vue'
+import Header from './components/shared/header/Header.vue'
+import Footer from './components/shared/footer/Footer.vue'
 
 export default {
 
   components: {
-    'my-header': Home,
-    'my-footer': Footer
+    'my-header': Header,
+    'my-footer': Footer,
   }
 }
 </script>
 
 <style>
 .content {
-  padding: 170px 0;
+  padding: 210px 0;
 }
 
 p {
