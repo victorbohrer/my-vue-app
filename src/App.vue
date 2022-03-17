@@ -11,6 +11,10 @@ import Footer from './components/shared/footer/Footer.vue'
 
 export default {
 
+  mounted() {
+    document.title = 'Home'
+  },
+
   components: {
     'my-header': Header,
     'my-footer': Footer,
@@ -30,7 +34,6 @@ p {
 h2 {
   font-family: Helvetica, sans-serif;
   color: #ff8906;
-  margin-bottom: 40px;
   font-size: 44px;
 }
 
